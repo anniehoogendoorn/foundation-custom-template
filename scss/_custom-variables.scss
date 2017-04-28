@@ -1,0 +1,35 @@
+// CUSTOM VARIABLES
+// ----------------
+
+// Font stacks
+// -----------
+
+$font-url--google-lato: 'https://fonts.googleapis.com/css?family=Lato';
+@import url($font-url--google-lato);
+
+$font-family--primary: 'Lato';
+$font-family--secondary: 'Helvetica Neue';
+
+// Font weights
+// ------------
+
+$font-weight--thin: 100;
+$font-weight--light: 300;
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+$font-weight--ultra-bold: 900;
+
+// Descriptive base colors
+// ------
+
+$color--cornflower-blue: #6195ED;
+$color--turquoise-blue: #6195ED;
+
+// Color usage
+// ----------
+
+$accent-color: $color--cornflower-blue;
+$shadow-color: darken($color--cornflower-blue, .2);
+
+// Text
+// ----------

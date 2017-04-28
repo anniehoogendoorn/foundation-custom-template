@@ -1,0 +1,84 @@
+@charset 'utf-8';
+
+// CUSTOM UTILS
+// --------------
+
+/// Imports custom scss util partials that can be used in Foundation's settings file
+@import 'custom-fonts';
+@import 'custom-variables';
+
+
+// FOUNDATON STYLES
+// -----------------
+
+///Imports Foundation (local) _settings partial - make variable changes to this file
+@import 'settings';
+/// Imports foundation.scss file with all partials from bower_components -> foundation-sites (except for settings)
+@import 'foundation';
+/// Imports motion-ui.scss file from  bower_components -> motion-ui (Foundation dependency)
+@import 'motion-ui';
+
+
+// FOUNDATION COMPONENTS
+// ---------------------
+
+/// Comment out any components (mixins) you don't need below
+
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+
+// OTHER VENDOR
+// ---------------------
+
+// vendors - 3rd party styles
+@import "../bower_components/font-awesome/css/font-awesome.css";
+
+
+// CUSTOM STYLES
+
+//Imports custom partial, loaded last to override any Foundation styles
+@import 'custom-styles';
