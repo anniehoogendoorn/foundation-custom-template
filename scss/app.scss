@@ -4,8 +4,8 @@
 // --------------
 
 /// Imports custom scss util partials that can be used in Foundation's settings file
-@import 'custom-fonts';
 @import 'custom-variables';
+@import 'custom-fonts';
 
 
 // FOUNDATON STYLES
@@ -75,7 +75,7 @@
 // ---------------------
 
 // vendors - 3rd party styles
-@import "../bower_components/font-awesome/css/font-awesome.css";
+@import "../../bower_components/font-awesome/css/font-awesome.css";
 
 
 // CUSTOM STYLES
